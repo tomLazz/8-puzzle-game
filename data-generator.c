@@ -41,8 +41,8 @@ int main(void) {
         
     }
 
-    moves_fd = open("moves-data-40kk.bin", O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
-    boards_fd = open("boards-data-40kk.bin", O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
+    moves_fd = open("moves-data-40k.bin", O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
+    boards_fd = open("boards-data-40k.bin", O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
 
     write(moves_fd, moves_buffer, sizeof(int) * 40000);
     write(boards_fd, boards_buffer, sizeof(int) * 40000 * 9);
